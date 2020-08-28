@@ -1,6 +1,6 @@
 ### x86 Assembly Language and Shellcoding on Linux 
 
-![pa](https://github.com/allan9595/SLAE-Assignments/SHELLCODING32.png "pa")
+![pa](https://github.com/allan9595/SLAE-Assignments/blob/master/SHELLCODING32.png "pa")
 
 This blog post has been created for completing the requirments of the SecurityTube (Pentester Academy) x86 Assembly Language and Shellcoding on Linux certification:
 
