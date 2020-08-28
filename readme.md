@@ -1,7 +1,7 @@
 ### x86 Assembly Language and Shellcoding on Linux 
 This blog post has been created for completing the requirments of the SecurityTube (Pentester Academy) x86 Assembly Language and Shellcoding on Linux certification:
 
-[https://www.pentesteracademy.com/course?id=3](https://www.pentesteracademy.com/course?id=3){:target="_blank"}
+[https://www.pentesteracademy.com/course?id=3](https://www.pentesteracademy.com/course?id=3)
 
 Student ID: SLAE-1562
 
