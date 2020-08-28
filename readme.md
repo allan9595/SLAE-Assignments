@@ -5,7 +5,7 @@ This blog post has been created for completing the requirments of the SecurityTu
 
 Student ID: SLAE-1562
 
-[BLog Link](https://bohansec.com)
+[Blog Link](https://bohansec.com)
 
 ### LICENSE
 
